@@ -16,5 +16,12 @@ House.prototype.party = function () {
     this.garbage = true;
     return this;
 }
+const func = function () {
+    console.log("Закупились")
+    return this;
+}
 
-console.log(new House(10, 100).clean().party().clean());
+const myHouse = new House(10, 100).clean().party().clean();
+myHouse["shop"] = func;
+
+console.log(myHouse.shop());
