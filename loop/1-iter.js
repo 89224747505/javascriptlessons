@@ -16,6 +16,7 @@ const range = {
 
 console.dir({
     range,
+    descriptor: Object.keys(range),
     names: Object.getOwnPropertyNames(range),
     symbols: Object.getOwnPropertySymbols(range),
 });
