@@ -2,4 +2,4 @@ let st = "";
 
 st = "Привет";
 
-console.log(st.big());
+console.log(st.indexOf('ве'));
