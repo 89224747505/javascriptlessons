@@ -1,6 +1,8 @@
-const obj1 = {};
-const obj2 = {};
+const obj1 = function() {};
+const obj2 = function() {};
 
-console.log(obj1 === obj2);
+const cl1 = new obj1();
+const cl2 = new obj2();
 
-console.log(obj1.__proto__ === obj2.__proto__);
+console.log(cl1.__proto__ === cl2.__proto__);
+
