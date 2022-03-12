@@ -7,3 +7,5 @@ console.log(st);
 const arr2 = JSON.parse(st);
 
 console.log(arr2);
+
+console.log(arr2.toString().replace(/,/g,''));
