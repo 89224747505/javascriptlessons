@@ -23,8 +23,12 @@ const checkTypes = (...arg) => (strCompares) => {
     })
     return result;
 }
-
-console.log(checkTypes('1', 2, '3', {a:5}, [1,2,3])('string/number/string/object/array'));
+const obj = {
+    num: 1,
+    str: 'sdsd',
+    obj: {a:5},
+}
+console.log(checkTypes(obj.num, obj.str, obj.obj)('number/string/object'));
 
 
 
