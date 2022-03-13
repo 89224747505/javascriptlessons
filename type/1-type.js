@@ -16,19 +16,15 @@ const checkTypes = (...arg) => (strCompares) => {
             (value.__proto__ === Array.prototype)
                 ? result = true
                 : console.log(`Переменная ${index+1} не является массивом`);
-        if (arrTypes[index] === 'oblect')
+        if (arrTypes[index] === 'object')
             (value.__proto__ === Object.prototype)
                 ? result = true
                 : console.log(`Переменная ${index+1} не является объектом`);
     })
     return result;
 }
-const obj = {
-    num: 1,
-    str: 'sdsd',
-    obj: {a:5},
-}
-console.log(checkTypes(obj.num, obj.str, obj.obj)('number/string/object'));
+
+console.log(checkTypes('1', 2, {a:4, b:4, c:10}, [1,2,4], '6')('string/number/object/array/number'));
 
 
 
