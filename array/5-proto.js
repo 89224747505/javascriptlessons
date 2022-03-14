@@ -14,5 +14,5 @@ console.log(obj1.prototype);
 
 const st ='hallo';
 
-console.log(st.__proto__ === String.prototype);
+console.log(cl1.constructor.prototype);
 
