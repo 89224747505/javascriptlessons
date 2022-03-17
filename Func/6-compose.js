@@ -6,4 +6,4 @@ const mul = (a) => a * a;
 
 const result = compose(sum, mul, sum, mul);
 
-console.log(result(2));
+console.log(result(4));
