@@ -15,6 +15,11 @@ Object.defineProperty(object1, 'property2', {
     writable: false
 });
 
+
+Object.defineProperty(object1, 'property3', {
+    value: 42,
+    writable: false
+});
 console.table(object1);
 for (const key in object1) {
     console.log(key);
