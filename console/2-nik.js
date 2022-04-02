@@ -1,11 +1,17 @@
-let str = "1--2--3--4--5--6--7--1"
-let arr = str.split("--")
+// let str = "никита--ваня--петя--петрович"
+// let arr = str.split("--");
 
-let counter = 0;
+let arr = {
+    ert:1,
+    sdf:123,
+    sdfsd:'123213123',
+}
+console.log(arr);
 
-while (counter < arr.length) {
-    if (arr[counter] % 2) console.log(`${arr[counter]} - число нечетное`);
-    else console.log(`${arr[counter]} - число четное`);
-    counter++;
-};
+// for (let value of arr) {
+//     console.log(value);
+// }
 
+for (let key in arr) {
+    console.log(arr[key]);
+}
