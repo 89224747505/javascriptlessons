@@ -7,3 +7,5 @@ console.log({
     nodeV:process.version,
     vers: process.versions
 })
+
+console.log(process.arch);
