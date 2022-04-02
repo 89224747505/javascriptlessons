@@ -1,10 +1,11 @@
-let arr = [1,2,3,4,5,6,123,112,233,654,34,123,12345];
+let str = "1--2--3--4--5--6--7--1"
+let arr = str.split("--")
 
 let counter = 0;
 
-while (counter <= arr.length) {
-    if (a[counter] % 2) console.log(`${a[counter]} - число четное`);
-    else console.log(`${a[counter]} - число нечетное`);
+while (counter < arr.length) {
+    if (arr[counter] % 2) console.log(`${arr[counter]} - число нечетное`);
+    else console.log(`${arr[counter]} - число четное`);
     counter++;
 };
 
